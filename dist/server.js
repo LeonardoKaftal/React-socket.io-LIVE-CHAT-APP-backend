@@ -88,7 +88,7 @@ createTables().catch((err) => {
 const server = http_1.default.createServer(app);
 const io = new socket_io_1.Server(server, {
     cors: {
-        origin: 'https://chat-app-backend-d6ly.onrender.com',
+        origin: 'https://chat-app-frontend-du72.onrender.com',
         methods: ['GET', 'POST'],
     },
 });
