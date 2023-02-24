@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 
 const client = new Client({
-    host: 'localhost',
+    host: process.env.HOST,
     user: process.env.DATABASEUSER,
     port: 5432,
     password: process.env.DATABASEPASSWORD,
