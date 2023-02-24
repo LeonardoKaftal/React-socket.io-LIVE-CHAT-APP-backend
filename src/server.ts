@@ -5,7 +5,7 @@ import { Server, Socket } from 'socket.io';
 import { Client } from 'pg';
 require('dotenv').config();
 
-const port = process.env.PORT || 8080;
+const port = 8080;
 const app = express();
 
 app.use(cors());
