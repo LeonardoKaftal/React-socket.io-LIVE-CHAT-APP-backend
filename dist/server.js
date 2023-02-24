@@ -18,11 +18,11 @@ const cors_1 = __importDefault(require("cors"));
 const socket_io_1 = require("socket.io");
 const pg_1 = require("pg");
 require('dotenv').config();
-const port = process.env.PORT || 8080;
+const port = 8080;
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 const client = new pg_1.Client({
-    host: 'localhost',
+    host: process.env.HOST,
     user: process.env.DATABASEUSER,
     port: 5432,
     password: process.env.DATABASEPASSWORD,
